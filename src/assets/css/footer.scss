@@ -1,0 +1,136 @@
+.footer {
+  padding: 60px 0;
+  margin-top: -1px;
+  position: relative;
+  background: #343333;
+
+  @media (max-width: 1025px) {
+    padding: 30px 0;
+  }
+}
+
+.footer_celtic-magic {
+  background: #3E3E3D;
+}
+
+.footer_rune{
+  background: #2e2d2d;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 22% 45% 22%;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px 20px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 11;
+  @media (max-width: 767px) {
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+
+  }
+}
+
+.footer-element {
+  & a {
+    transition: ease-in-out all 0.3s;
+    cursor: pointer;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    @media (max-width: 1025px) {
+
+      font-size: 11px;
+      line-height: 14px;
+    }
+  }
+
+  & a:hover {
+
+    text-decoration: underline;
+  }
+}
+
+.footer-element_1 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  @media (max-width: 767px) {
+    grid-row: unset;
+
+
+  }
+}
+
+.footer-element_2 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  @media (max-width: 767px) {
+    grid-column: 1 / 2;
+    grid-row: unset;
+
+
+  }
+}
+
+.footer-element_2-pc {
+  @media (max-width: 767px) {
+    display: none;
+
+  }
+}
+
+.footer-element_2-mb {
+  display: none;
+  @media (max-width: 767px) {
+    display: block;
+
+  }
+}
+
+.footer-element_3 {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+  @media (max-width: 767px) {
+    grid-column: 1 / 2;
+    grid-row: unset;
+
+
+  }
+}
+
+
+.footer-element_4 {
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+  @media (max-width: 767px) {
+    grid-column: 1 / 2;
+    grid-row: unset;
+
+
+  }
+}
+
+.footer-master {
+  background: url("../../assets/img/2.content/background_sybmol.png ") no-repeat center;
+  background-size: 100%;
+}
+
+.footer-alchemy {
+  background: #FFFFFF;
+
+}
+
+.footer-element-alchemy {
+  & a {
+    color: #000000;
+    font-weight: 400;
+  }
+}

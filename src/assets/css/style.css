@@ -4603,8 +4603,8 @@ img {
   left: 0;
   border-radius: 30%;
   clip-path: unset;
-  background: #92704E;
-  filter: blur(121px);
+  background: url(../img/2.content/bg-blur1.svg) center no-repeat;
+  background-size: 100% 100%;
   z-index: -1;
 }
 @media (max-width: 1025px) {
@@ -4855,14 +4855,14 @@ img {
 }
 .access-column:after {
   content: "";
-  width: 350px;
+  width: 686px;
   height: 250px;
   position: absolute;
   top: 0;
-  left: calc((100% - 350px) / 2);
+  left: calc((100% - 686px) / 2);
   border-radius: 30%;
-  background: #92704E;
-  filter: blur(71px);
+  background: url(../img/2.content/bg-blur1.svg) center no-repeat;
+  background-size: 100%;
   z-index: -1;
 }
 
@@ -4981,14 +4981,14 @@ img {
 }
 .access-row__list:after {
   content: "";
-  width: 500px;
-  height: 400px;
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
   border-radius: 30%;
-  background: #92704E;
-  filter: blur(121px);
+  background: url(../img/2.content/bg-blur2.svg) center no-repeat;
+  background-size: 100% 100%;
   z-index: -1;
 }
 .access-row__list span {

@@ -91,6 +91,10 @@ img {
   background: linear-gradient(360deg, #4767BD 0%, #80A3FF 100%);
   box-shadow: unset;
 }
+.pattern__btn_cosmogony:hover {
+  background: linear-gradient(360deg, #4767BD 0%, #80A3FF 100%);
+  transform: scale(1.1);
+}
 
 .wrapper {
   min-height: 100vh;
@@ -740,12 +744,13 @@ img {
 }
 @media (max-width: 767px) {
   .block-appeal:after {
-    right: calc((100% - 320px) / 2);
+    right: calc((100% - 420px) / 2);
     top: unset;
     bottom: -25px;
-    width: 329px;
+    width: 420px;
     height: 242px;
-    background-size: contain;
+    background-size: 100%;
+    background-position-y: -34px;
     clip-path: polygon(0 56%, 100% 0%, 100% 100%, 0 100%);
   }
 }
@@ -813,10 +818,10 @@ img {
 }
 @media (max-width: 767px) {
   .wrapper-appeal__img {
-    width: 289px;
-    height: 201px;
-    right: calc((100% - 250px) / 2 - 35px);
-    bottom: -3px;
+    width: 350px;
+    height: 221px;
+    right: calc((100% - 350px) / 2 - 35px);
+    bottom: -10px;
   }
 }
 
@@ -2117,6 +2122,13 @@ img {
   top: 0;
   left: 0;
   z-index: -2;
+}
+@media (max-width: 1023px) {
+  .block-celtic-magic:after {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 .celtic-magic-tl__blur {
@@ -3500,7 +3512,7 @@ img {
 }
 
 .block-price-rune__element-last-cost {
-  font-size: 15px;
+  font-size: 20px;
   opacity: 24%;
   text-decoration-line: line-through;
 }
@@ -3516,26 +3528,7 @@ img {
   background: #2e2d2d;
   color: #FFFFFF;
   position: relative;
-}
-.block-class-time:before {
-  content: "";
-  background: url("../img/2.content/background_rune.png") no-repeat center;
-  background-size: contain;
-  position: absolute;
-  width: 1363px;
-  height: 1255px;
-  top: calc((100% - 1255px) / 2);
-  right: calc((100% - 1363px) / 2 + 5px);
-  transform: scale(1.09) rotate(1.5deg);
-}
-@media (max-width: 1025px) {
-  .block-class-time:before {
-    width: 1115px;
-    right: calc((100% - 1115px) / 2 - 5px);
-    height: 1026px;
-    top: calc((100% - 1026px) / 2 - 110px);
-    transform: scale(1.1) rotate(1.5deg);
-  }
+  position: relative;
 }
 @media (max-width: 767px) {
   .block-class-time {
@@ -3659,7 +3652,7 @@ img {
 }
 
 .certificate-rune-title {
-  color: #000000;
+  color: #4D4C4B;
 }
 
 .wrapper-certificate-rune__img {
@@ -3849,7 +3842,7 @@ img {
 }
 
 .schedule-master-title {
-  color: #000000;
+  color: #4D4C4B;
 }
 @media (max-width: 767px) {
   .schedule-master-title {
@@ -3951,7 +3944,7 @@ img {
   justify-content: space-between;
   flex-flow: column;
   align-items: center;
-  min-height: 930px;
+  min-height: 870px;
 }
 @media (max-width: 1025px) {
   .program-element {
@@ -4111,6 +4104,8 @@ img {
 }
 .program-element__date p {
   margin-bottom: 10px;
+  font-weight: 500;
+  color: #463717;
 }
 .program-element__date span {
   color: #FFA751;
@@ -4180,6 +4175,7 @@ img {
   font-size: 30px;
   font-weight: 600;
   text-align: center;
+  color: #463717;
 }
 @media (max-width: 1025px) {
   .program-master__title {
@@ -4233,6 +4229,8 @@ img {
 .program-master__list p {
   margin-top: 20px;
   position: relative;
+  color: #463717;
+  font-weight: 500;
 }
 .program-master__list p:before {
   content: "";
@@ -4307,6 +4305,11 @@ img {
   }
 }
 
+.block-price-master__element-btn {
+  max-width: 360px;
+  width: 360px;
+  height: 67px;
+}
 @media (max-width: 1025px) {
   .block-price-master__element-btn {
     max-width: 250px;
@@ -5199,6 +5202,7 @@ img {
   .block-price-alchemy__element {
     margin-top: 80px;
     width: 275px;
+    padding-top: 10px;
   }
 }
 
@@ -5368,6 +5372,8 @@ img {
 }
 .block-price-alchemy__element_big .block-price-alchemy__element-text-title {
   margin-top: 27px;
+  font-size: 20px;
+  font-weight: 500;
 }
 .block-price-alchemy__element_big .block-price__element-cost {
   margin-top: 50px;
@@ -5396,7 +5402,7 @@ img {
     font-size: 34px;
   }
   .block-price-alchemy__element_big .block-price-alchemy__element-text-title {
-    margin-top: 15px;
+    margin-top: 21px;
     font-size: 16px;
   }
   .block-price-alchemy__element_big .block-price-alchemy__element-row {
@@ -5887,41 +5893,42 @@ img {
 
 .block-info-immortality {
   position: relative;
+  padding: 100px 0;
 }
-.block-info-immortality:after {
+.block-info-immortality::before {
   content: "";
-  background: url("../img/2.content/immortality_block_decoration_1.svg") no-repeat center;
-  background-size: cover;
-  width: 100%;
-  height: 450px;
+  background: url("../img/2.content/immortality_block_decoration_1.svg") no-repeat top;
+  background-size: 100% 100%;
+  width: 101%;
+  height: 210px;
   position: absolute;
-  top: -24%;
+  top: -23%;
   left: 50%;
   transform: translate(-50%, 0);
   z-index: 10;
 }
 @media (max-width: 1025px) {
-  .block-info-immortality:after {
-    width: 1025px;
-    height: 170px;
-    top: -21%;
+  .block-info-immortality::before {
+    width: 1035px;
+    height: 150px;
+    top: -20.5%;
   }
 }
 @media (max-width: 767px) {
-  .block-info-immortality:after {
-    width: 340px;
-    height: 60px;
+  .block-info-immortality::before {
+    width: 110%;
+    height: 50px;
     top: -14%;
   }
+}
+.block-info-immortality .content {
+  z-index: 15;
+  position: relative;
 }
 @media (max-width: 767px) {
   .block-info-immortality {
     padding: 60px 0 30px;
   }
-}
-
-.block-info-immortality {
-  padding: 100px 0;
 }
 
 .block-info-immortality__btn {
@@ -5939,27 +5946,33 @@ img {
 }
 .block-teaching-immortality:after {
   content: "";
-  background: url("../img/2.content/immortality_block_decoration_1.svg") no-repeat center;
-  background-size: cover;
-  width: 100%;
-  height: 450px;
+  background: url("../img/2.content/immortality_block_decoration_1.svg") no-repeat top;
+  background-size: 100% 100%;
+  width: 100.7%;
+  height: 210px;
   position: absolute;
-  bottom: -8%;
+  bottom: -208px;
   left: 50%;
   z-index: 10;
   transform: translate(-50%, 0) rotate(180deg);
 }
 @media (max-width: 1025px) {
   .block-teaching-immortality:after {
-    width: 1025px;
-    height: 190px;
+    width: 1060px;
+    height: 140px;
+    bottom: -9%;
+  }
+}
+@media (max-width: 1023px) {
+  .block-teaching-immortality:after {
+    bottom: -8.5%;
   }
 }
 @media (max-width: 767px) {
   .block-teaching-immortality:after {
-    width: 330px;
-    height: 60px;
-    bottom: -4%;
+    width: 105%;
+    height: 40px;
+    bottom: -3.8%;
   }
 }
 
@@ -6057,24 +6070,6 @@ img {
 .block-price-immortality__column {
   position: relative;
   z-index: 2;
-}
-.block-price-immortality__column:after {
-  content: "";
-  background: url("../img/2.content/immortality_tablet_decoration.svg") no-repeat center;
-  background-size: contain;
-  width: 740px;
-  height: 425px;
-  position: absolute;
-  right: calc((100% - 740px) / 2);
-  top: 150px;
-  z-index: -1;
-}
-@media (max-width: 767px) {
-  .block-price-immortality__column:after {
-    right: calc((100% - 600px) / 2);
-    width: 600px;
-    top: 100px;
-  }
 }
 
 .immortality-blur_4 {
@@ -6244,8 +6239,8 @@ img {
   right: 40%;
 }
 
-.block-info-cosmogony:after {
-  top: -26%;
+.block-info-cosmogony::before {
+  width: 104%;
 }
 .block-info-cosmogony .block-info__btn {
   background: #80A3FF;
@@ -6275,10 +6270,6 @@ img {
 }
 .block-teaching-cosmogony .teaching-tablet__btn-ellipse {
   background: #80A3FF;
-}
-.block-teaching-cosmogony:after {
-  left: 50%;
-  bottom: -10%;
 }
 
 .block-cosmogony-price {

@@ -518,6 +518,7 @@
 
 
 .description-element__title {
+  color: #463717;
   span {
     background: linear-gradient(to right, rgba(255, 167, 81, 0.43) 100%, rgba(255, 167, 81, 0.43) 100%) bottom center repeat-x;
     padding: 0 5px;
@@ -535,6 +536,7 @@
 }
 
 .description-element__title_w {
+  color: #ffffff;
   @media (max-width: 767px) {
     br {
       display: none;

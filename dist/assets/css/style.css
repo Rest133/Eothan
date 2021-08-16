@@ -373,6 +373,7 @@ img {
 }
 
 .description-element__title {
+  color: #463717;
   -ms-flex-item-align: center;
       align-self: center;
 }
@@ -384,6 +385,10 @@ img {
   padding: 0 5px;
   background-size: 100% 14px;
   background-position-y: 90%;
+}
+
+.description-element__title_w {
+  color: #ffffff;
 }
 
 .description-element__text {

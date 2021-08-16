@@ -573,6 +573,7 @@ img {
 }
 
 .description-element__title {
+  color: #463717;
   align-self: center;
 }
 .description-element__title span {
@@ -588,6 +589,9 @@ img {
   }
 }
 
+.description-element__title_w {
+  color: #ffffff;
+}
 @media (max-width: 767px) {
   .description-element__title_w br {
     display: none;

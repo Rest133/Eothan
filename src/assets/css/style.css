@@ -1211,6 +1211,10 @@ img {
   }
 }
 
+.gifts-title {
+  color: #463717;
+}
+
 .gifts-table {
   margin-top: 80px;
   display: grid;
@@ -1266,6 +1270,7 @@ img {
 }
 
 .gifts-text {
+  color: #463717;
   margin-top: 20px;
   font-size: 20px;
   font-weight: 600;
@@ -2197,6 +2202,9 @@ img {
   align-items: center;
 }
 
+.block-info__title {
+  color: #4D4C4B;
+}
 .block-info__title br {
   display: none;
 }
@@ -3115,6 +3123,9 @@ img {
   z-index: 11;
 }
 
+.presenters-title {
+  color: #463717;
+}
 @media (max-width: 1025px) {
   .presenters-title {
     font-size: 42px;
@@ -4484,7 +4495,7 @@ img {
 }
 
 .certificate-master-title {
-  color: #000000;
+  color: #4D4C4B;
 }
 @media (max-width: 767px) {
   .certificate-master-title {
@@ -5729,6 +5740,36 @@ img {
   }
 }
 
+.top-border {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 101%;
+  height: 210px;
+  transform: translate(-50%, 0);
+  z-index: 10;
+  background: url("../img/2.content/immortality_block_decoration_1.svg") no-repeat top;
+  background-size: 150%;
+}
+@media (max-width: 1025px) {
+  .top-border {
+    width: 1035px;
+    height: 150px;
+  }
+}
+@media (max-width: 767px) {
+  .top-border {
+    width: 100%;
+    height: 70px;
+  }
+}
+
+.top-border_rotate {
+  top: 0;
+  bottom: unset;
+  transform: translate(-50%, 0) rotate(180deg);
+}
+
 .immortality-blur {
   width: 141px;
   height: 141px;
@@ -5895,32 +5936,6 @@ img {
   position: relative;
   padding: 100px 0;
 }
-.block-info-immortality::before {
-  content: "";
-  background: url("../img/2.content/immortality_block_decoration_1.svg") no-repeat top;
-  background-size: 100% 100%;
-  width: 101%;
-  height: 210px;
-  position: absolute;
-  top: -23%;
-  left: 50%;
-  transform: translate(-50%, 0);
-  z-index: 10;
-}
-@media (max-width: 1025px) {
-  .block-info-immortality::before {
-    width: 1035px;
-    height: 150px;
-    top: -20.5%;
-  }
-}
-@media (max-width: 767px) {
-  .block-info-immortality::before {
-    width: 110%;
-    height: 50px;
-    top: -14%;
-  }
-}
 .block-info-immortality .content {
   z-index: 15;
   position: relative;
@@ -5943,37 +5958,6 @@ img {
 
 .block-teaching-immortality {
   position: relative;
-}
-.block-teaching-immortality:after {
-  content: "";
-  background: url("../img/2.content/immortality_block_decoration_1.svg") no-repeat top;
-  background-size: 100% 100%;
-  width: 100.7%;
-  height: 210px;
-  position: absolute;
-  bottom: -208px;
-  left: 50%;
-  z-index: 10;
-  transform: translate(-50%, 0) rotate(180deg);
-}
-@media (max-width: 1025px) {
-  .block-teaching-immortality:after {
-    width: 1060px;
-    height: 140px;
-    bottom: -9%;
-  }
-}
-@media (max-width: 1023px) {
-  .block-teaching-immortality:after {
-    bottom: -8.5%;
-  }
-}
-@media (max-width: 767px) {
-  .block-teaching-immortality:after {
-    width: 105%;
-    height: 40px;
-    bottom: -3.8%;
-  }
 }
 
 .block-price-immortality {
@@ -6160,6 +6144,9 @@ img {
     margin-top: 15px;
   }
 }
+.block-tl-cosmogony .top-border {
+  width: 104%;
+}
 
 .cosmogony-ellipse {
   width: 4px;
@@ -6239,9 +6226,6 @@ img {
   right: 40%;
 }
 
-.block-info-cosmogony::before {
-  width: 104%;
-}
 .block-info-cosmogony .block-info__btn {
   background: #80A3FF;
   border: 1px solid rgba(128, 163, 255, 0.5);
